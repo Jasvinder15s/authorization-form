@@ -13,7 +13,7 @@ class Contact extends React.Component {
 
   authorize(e) {
     const password = e.target.querySelector('input[type="password"]').value;
-    const auth = password == this.state.password;
+    const auth = password === this.state.password;
     this.setState({
       authorized: auth,
     });
@@ -22,7 +22,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div id="authorization">
-        <h1>Contact</h1>
+        <h1>{this.state.authorized ? "Contact" : "Enter the Password"}</h1>
         <ul>
           <li>client@example.com</li>
           <li>555.555.5555</li>

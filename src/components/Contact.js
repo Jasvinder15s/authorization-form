@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -20,6 +20,7 @@ class Contact extends React.Component {
   }
 
   render() {
+    const login = <form action="#"></form>;
     return (
       <div id="authorization">
         <h1>{this.state.authorized ? "Contact" : "Enter the Password"}</h1>

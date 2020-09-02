@@ -26,13 +26,15 @@ class Contact extends React.Component {
         <input type="submit"></input>
       </form>
     );
+    const contactInfo = (
+      <ul>
+        <li>client@example.com</li>
+        <li>555.555.5555</li>
+      </ul>
+    );
     return (
       <div id="authorization">
         <h1>{this.state.authorized ? "Contact" : "Enter the Password"}</h1>
-        <ul>
-          <li>client@example.com</li>
-          <li>555.555.5555</li>
-        </ul>
       </div>
     );
   }
